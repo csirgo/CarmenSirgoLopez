@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" type="text/css" media="all" href="css/videoplayer-style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/dark-mode.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/dropdown.css">
 </head>
 
 <body>
     <header>
-
         <nav>
             <input type="checkbox" id="menu-cb">
             <label for="menu-cb" class="menu-btn">
@@ -34,13 +34,23 @@
                 <li><a href="#destrezas">Destrezas</a></li>
             </ul>
         </nav>
+        <div class="config">
+            <div class="dropdown">
+                <button class="dropbtn"><img class="icon" alt="Español" src="resources/espana.png"> ES</button>
+                <div class="dropdown-content">
+                  <a href="#"><img class="icon" alt="Español" src="resources/reino-unido.png"> EN</a>
+                  <a href="#"><img class="icon" alt="Inglés" src="resources/espana.png"> ES</a>
+                </div>
+              </div>
+            <button id="mode"><img id="mode-icon" class="icon" alt="Dark Mode" src="resources/moon.png"></button>
+        </div>
     </header>
     <main>
         <section id="quiensoy">
             <img alt="Dibujo Carmen Sirgo Lopez" src="resources/yo.png">
             <article>
                 <h1>Carmen <em>Sirgo López</em></h1>
-                <p>¡Hola! Soy Carmen Sirgo López, graduada en Ingeniería Infomática de Software. Este es mi portfolio,
+                <p>¡Hola! Soy Carmen Sirgo López, graduada de Ingeniería Infomática de Software y del Máster de Ingeniería Web. Este es mi portfolio,
                     donde podrás encontrar información sobre mí y mis proyectos.</p>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/carmen-sirgo-l%C3%B3pez-9488271a6/" title="LinkedIn"><img
@@ -57,15 +67,15 @@
         <section id="estudios">
             <h2>Estudios</h2>
             <article>
-                <h3>Ingeniería Informática de Software</h3>
+                <h3>Ingeniería Informática de Software <em>2017-2022</em></h3>
                 <p>Comencé el grado de Ingeniería Informática de Software en la Universidad de
                     Oviedo en 2017 y finalicé en Febrero de 2022 con una nota media de 8,52.</p>
                 <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/eii.png">
             </article>
             <article>
-                <h3>Master en Ingeniería Web</h3>
-                <p>Ahora soy estudiante del Máster en Ingeniería Web de segundo año, también en la Universidad de Oviedo, y mi TFM va a ser una
-                    plataforma de minijuegos desarrollada con Websockets.</p>
+                <h3>Master en Ingeniería Web <em>2022-2024</em></h3>
+                <p>Tras finalizar el grado, comencé el Máster en Ingeniería Web en 2022, también en la Universidad de Oviedo,
+                    y finalicé en Julio de 2024 con una nota media de 9,13</p>
                 <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/miw.jpg">
             </article>
         </section>
@@ -80,33 +90,31 @@
                     <a href="https://kame11.itch.io/cubical-ranch" title="Cubical Ranch en Itch.io">Ver en Itch.io</a></p>
                 <img alt="Cubical Ranch Logo" class="lazy" data-src="resources/CBIcon.png">
             </article>
-            <video id="media" preload="metadata">
-                <source id="video1" src="resources/CubicalRanch.mp4" type="video/mp4">
-                Your browser does not support mp4 format.
-            </video>
-            <div class="controls">
-                <input id="progress-bar" class="progress-bar" value="0" min="0" type="range" step="1">
-                <div>
-                    <button name="play" id="play" class="play">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
-                    <span><i class="fa-solid fa-volume-high"></i></span>
-                    <input id="volume" class="volume" value="1" type="range" max="1" min="0" step="0.01">
-                    <time id="time">00:00</time>
-                    <span>/</span>
-                    <time id="duration">00:00</time>
-                </div>
-            </div>
+            <article>
+                <h3>Cubical Ranch</h3>
+                <p> Se trata de un videojuego de gestión de granja que hice como Trabajo de Fin de Grado.
+                    Ha sido desarrollado con Unreal Engine 4, tanto en Blueprints como en C++ y con assets de creación
+                    propia. <br><br>
+                    <a href="https://kame11.itch.io/cubical-ranch" title="Cubical Ranch en Itch.io">Ver en Itch.io</a></p>
+                <img alt="Cubical Ranch Logo" class="lazy" data-src="resources/CBIcon.png">
+            </article>
         </section>
 
         <section id="experiencia">
             <h2>Experiencia</h2>
             <article>
-                <h3>Prácticas en empresa</h3>
+                <h3>Grupo Mentaformación Siglo XXI <em>2021</em></h3>
+                <p>En 2021 hice mis práctica en empresa en el Grupo Mentaformación Siglo XXI, donde desarollé una página
+                    web con Wordpress. Fue un proyecto full stack, donde desarollé tanto parte del front como del
+                    back, creé plugins en PHP y gestioné la base de datos.</p>
+                <img alt="Logo Grupo Menta" class="lazy" data-src="resources/menta.png">
+            </article>
+            <article>
+                <h3>Hiberus <em>2024-2025</em></h3>
                 <p>En 2021 hice mis práctica en empresa en el Grupo Mentaformación Siglo XXI, donde desarollé una página
                     web con Wordpress. Fue un proyecto multidisciplina, donde desarollé tanto parte del front como del
                     back, creé plugins en PHP y gestioné la base de datos.</p>
-                <img alt="Grupo Menta" class="lazy" data-src="resources/menta.png">
+                <img alt="Logo Hiberus" class="lazy" data-src="resources/hiberus.jpg">
             </article>
         </section>
 
@@ -172,7 +180,6 @@
         <p>Curso 2023-2024</p>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/videoplayer-script.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="js/carousel.js"></script>
 </body>

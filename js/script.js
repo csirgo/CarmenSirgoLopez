@@ -1,6 +1,18 @@
+var body;
+var modeIcon;
+
 // Botones seccion principal
 document.addEventListener('DOMContentLoaded', function () {
-    var imagenes = document.querySelectorAll('.social');
+    const imagenes = document.querySelectorAll('.social');
+    const modeBtn = document.getElementById('mode');
+    body = document.body;
+    modeIcon = document.getElementById('mode-icon');
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+        body.setAttribute("data-theme", currentTheme);
+        modeIcon.src = currentTheme === "dark" ? "resources/sun.png" : "resources/moon.png";
+    }
 
     imagenes.forEach(function (imagen) {
         imagen.addEventListener('mouseover', function () {
@@ -12,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
             var texto = this.getAttribute('alt');
             ocultarTexto(texto);
         });
+    });  
+
+    modeBtn.addEventListener('click', () => {
+        toggleMode();
     });
 });
 
@@ -21,6 +37,13 @@ function mostrarTexto(texto) {
 
 function ocultarTexto(texto) {
     document.getElementById('psocial').innerText = "";
+}
+
+function toggleMode() {
+    const theme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+    modeIcon.src = theme === "dark" ? "resources/sun.png" : "resources/moon.png";
 }
 
 
