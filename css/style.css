@@ -306,6 +306,15 @@ section:last-of-type h2 {
   text-align: center;
 }
 
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+pre img {
+  margin-bottom: 0;
+}
+
 footer {
   scroll-snap-align: end;
   background-color: var(--background-color2);
