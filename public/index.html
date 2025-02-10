@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- CHARSET -->
+    <meta charset="utf-8">
+    <!-- TITLE AND BASE -->
+    <title>Carmen Sirgo López</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" media="all" href="css/dark-mode.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/dropdown.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-cb">
+            <label for="menu-cb" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#quiensoy" data-i18n="menu_inicio">Inicio</a></li>
+                <li><a href="#estudios" data-i18n="menu_estudios">Estudios</a></li>
+                <li><a href="#portfolio" data-i18n="menu_portfolio">Portfolio</a></li>
+                <li><a href="#experiencia" data-i18n="menu_experiencia">Experiencia</a></li>
+                <li><a href="#destrezas" data-i18n="menu_destrezas">Destrezas</a></li>
+            </ul>
+        </nav>
+        <div class="config">
+            <div id="language-switcher" class="dropdown">
+                <button class="dropbtn"><img class="icon" alt="Español" src="resources/espana.png"> ES</button>
+                <div class="dropdown-content">
+                  <a href="#" id="btn-en"><img class="icon" alt="Español" src="resources/reino-unido.png"> EN</a>
+                  <a href="#" id="btn-es"><img class="icon" alt="Inglés" src="resources/espana.png"> ES</a>
+                </div>
+              </div>
+            <button id="mode"><img id="mode-icon" class="icon" alt="Dark Mode" src="resources/moon.png"></button>
+        </div>
+    </header>
+    <main>
+        <section id="quiensoy">
+            <img alt="Dibujo Carmen Sirgo Lopez" src="resources/Carmen.png">
+            <article>
+                <h1>Carmen <em>Sirgo López</em></h1>
+                <p id="quiensoy-text" data-i18n="greeting">
+                    ¡Hola! Soy Carmen Sirgo López, graduada de Ingeniería Infomática de Software y del Máster de Ingeniería Web. Este es mi portfolio,
+                    donde podrás encontrar información sobre mí y mis proyectos.
+                </p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/carmen-sirgo-l%C3%B3pez-9488271a6/" title="LinkedIn"><img
+                                class="social" alt="LinkedIn" src="resources/linkedin.png"></a></li>
+                    <li><a href="https://github.com/UO264637" title="GitHub"><img class="social" alt="GitHub"
+                                src="resources/github.png"></a></li>
+                    <li><a href="https://kame11.itch.io" title="Itch.io"><img class="social" alt="Itch.io"
+                                src="resources/itchio.png"></a></li>
+                </ul>
+                <p id="psocial"> </p>
+            </article>
+        </section>
+
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <article>
+                <h3>Ingeniería Informática de Software <em>2017-2022</em></h3>
+                <p>Comencé el grado de Ingeniería Informática de Software en la Universidad de
+                    Oviedo en 2017 y finalicé en Febrero de 2022 con una nota media de 8,52.</p>
+                <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/eii.png">
+            </article>
+            <article>
+                <h3>Master en Ingeniería Web <em>2022-2024</em></h3>
+                <p>Tras finalizar el grado, comencé el Máster en Ingeniería Web en 2022, también en la Universidad de Oviedo,
+                    y finalicé en Julio de 2024 con una nota media de 9,13.</p>
+                <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/miw.jpg">
+            </article>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <article>
+                <h3>Cubical Ranch</h3>
+                <p> Se trata de un videojuego de gestión de granja que hice como Trabajo de Fin de Grado.
+                    Ha sido desarrollado con Unreal Engine 4, tanto en Blueprints como en C++ y con assets de creación
+                    propia. <br><br>
+                    <a href="https://kame11.itch.io/cubical-ranch" title="Cubical Ranch en Itch.io">Ver en Itch.io</a></p>
+                <img alt="Cubical Ranch Logo" class="lazy" data-src="resources/CBIcon.png">
+            </article>
+            <article>
+                <h3>Arkame Games</h3>
+                <p> Es una plataforma de minijuegos multijugador para dos jugadores.
+                    Ha sido desarrollado JavaScript y Websockets, además de HTML5 y CSS. Los recursos gráficos también son
+                    de creación propia. <br><br>
+                    <a href="https://kame11.itch.io/cubical-ranch" title="Cubical Ranch en Itch.io">Ver en Itch.io</a></p>
+                <img alt="Arkame Games Logo" class="lazy" data-src="resources/AGIcon.png">
+            </article>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <article>
+                <h3>Grupo Mentaformación Siglo XXI <em>2021</em></h3>
+                <p>En 2021 hice mis práctica en empresa en el Grupo Mentaformación Siglo XXI, donde desarollé una página
+                    web con Wordpress. Fue un proyecto full stack, donde desarollé tanto parte del front como del
+                    back, creé plugins en PHP y gestioné la base de datos.</p>
+                <img alt="Logo Grupo Menta" class="lazy" data-src="resources/menta.png">
+            </article>
+            <article>
+                <h3>Hiberus <em>2024-2025</em></h3>
+                <p>En 2024 comencé mis práctica del máster en Hiberus, donde estuve trabajando principalmente con Java para 
+                    la web de un periódico.
+                    Ahora me encuentro en el departamento de microservicios, donde trabajo con Java, Spring Boot, Jenkins y
+                    OpenShift.</p>
+                <img alt="Logo Hiberus" class="lazy" data-src="resources/hiberus.jpg">
+            </article>
+        </section>
+
+        <section id="destrezas">
+            <h2>Destrezas</h2>
+            <div class="carousel fade">
+                <article class="containers">
+                    <h3>Lenguajes</h3>
+                    <p><img alt="" class="lazy" data-src="resources/java.png">Java</p>
+                    <p><img alt="" class="lazy" data-src="resources/piton.png">Python</p>
+                    <p><img alt="" class="lazy" data-src="resources/html-5.png">HTML5</p>
+                    <p><img alt="" class="lazy" data-src="resources/css-3.png">CSS3</p>
+                    <p><img alt="" class="lazy" data-src="resources/sql.png">SQL</p>
+                    <p><img alt="" class="lazy" data-src="resources/js.png">JavaScript</p>
+                    <p><img alt="" class="lazy" data-src="resources/csharp.png">C#</p>
+                    <p><img alt="" class="lazy" data-src="resources/cpp.png">C++</p>
+                    <p><img alt="" class="lazy" data-src="resources/Go.png">Go</p>
+                    <p><img alt="" class="lazy" data-src="resources/php.png">PHP</p>
+                </article>
+
+                <article class="containers">
+                    <h3>Frameworks</h3>
+                    <p><img alt="" class="lazy" data-src="resources/Spring.png">Spring</p>
+                    <p><img alt="" class="lazy" data-src="resources/tailwind.png">Tailwind</p>
+                    <p><img alt="" class="lazy" data-src="resources/react.png">React</p>
+                    <p><img alt="" class="lazy" data-src="resources/cakephp.png">CakePHP</p>
+                </article>
+
+                <article class="containers">
+                    <h3>Otros</h3>
+                    <p><img alt="" class="lazy" data-src="resources/git.png">Git</p>
+                    <p><img alt="" class="lazy" data-src="resources/wordpress.png">Wordpress</p>
+                    <p><img alt="" class="lazy" data-src="resources/ps.png">Photoshop</p>
+                    <p><img alt="" class="lazy" data-src="resources/arduino.png">Arduino</p>
+                    <p><img alt="" class="lazy" data-src="resources/unreal.png">UE4</p>
+                    <p><img alt="" class="lazy" data-src="resources/unity.png">Unity</p>
+                    <p><img alt="" class="lazy" data-src="resources/docker.png">Docker</p>
+                </article>
+
+                <article class="containers">
+                    <h3>Idiomas</h3>
+                    <p><img alt="Español" class="lazy" data-src="resources/espana.png">Nativo</p>
+                    <p><img alt="Inglés" data-src="resources/reino-unido.png">B2-First</p>
+                    <p><img alt="Japonés" data-src="resources/japon.png">Básico</p>
+                </article>
+
+                <a class="back" onclick="plusSlides(-1)">&lt;</a>
+                <a class="forward" onclick="plusSlides(1)">></a>
+            </div>
+            <div style="text-align:center">
+                <span class="dots"></span>
+                <span class="dots"></span>
+                <span class="dots"></span>
+                <span class="dots"></span>
+            </div>
+            <pre><img alt="Experiencia" src="resources/experiencia.png"></pre>
+            <p>
+     Experiencia</p>
+        </section>
+    </main>
+    <footer>
+        <p>Máster en Ingeniería Web</p>
+        <p>Difusión de Contenidos Multimedia Vía Web</p>
+        <p>Curso 2023-2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/locale.js"></script>
+</body>
+</html>
