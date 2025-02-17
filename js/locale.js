@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadLanguage(lang) {
-    fetch(`http://localhost:3000/locales/${lang}.json`)
+    fetch(`https://carmensirgolopez.pages.dev/locales/${lang}.json`)
         .then(response => response.json())
         .then(translations => {
             document.querySelectorAll("[data-i18n]").forEach(element => {
