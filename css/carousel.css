@@ -44,6 +44,10 @@ section:last-of-type pre img {
     margin-top: 15px;
 }
 
+section:last-of-type p:last-of-type {
+    padding-bottom: 20px;
+}
+
 .carousel {
     width: 100%;
 

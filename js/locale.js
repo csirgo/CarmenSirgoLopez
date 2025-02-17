@@ -1,6 +1,6 @@
 // js/script.js
 document.addEventListener("DOMContentLoaded", function () {
-    const lang = localStorage.getItem("lang") || "es"; // Cargar idioma guardado
+    const lang = localStorage.getItem("lang") || "es"; 
     loadLanguage(lang);
 
     document.getElementById("language-switcher").addEventListener("change", function () {
@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadLanguage(lang) {
+    const languageSwitcher = document.getElementById("language-switcher");
+    const dropbtn = languageSwitcher.querySelector(".dropbtn");
+    const selected = document.getElementById(`btn-${lang}`);
+        if (selected) {
+            const img = selected.querySelector("img").cloneNode(true); 
+            dropbtn.innerHTML = ""; 
+            dropbtn.appendChild(img);
+            dropbtn.innerHTML += ` ${lang.toUpperCase()}`;
+        }
+
     fetch(`https://carmensirgolopez.pages.dev/locales/${lang}.json`)
         .then(response => response.json())
         .then(translations => {
@@ -32,4 +42,6 @@ function loadLanguage(lang) {
                 }
             });
         });
+
+    
 }
