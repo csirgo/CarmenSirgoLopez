@@ -3,13 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const lang = localStorage.getItem("lang") || "es"; 
     loadLanguage(lang);
 
-    document.getElementById("language-switcher").addEventListener("change", function () {
-        const selectedLang = this.value;
-        localStorage.setItem("lang", selectedLang);
-        loadLanguage(selectedLang);
-    });
-
-    // Cambiar idioma con botones
     document.getElementById("btn-en").addEventListener("click", function (e) {
         e.preventDefault();
         loadLanguage("en");
@@ -36,12 +29,11 @@ function loadLanguage(lang) {
         .then(response => response.json())
         .then(translations => {
             document.querySelectorAll("[data-i18n]").forEach(element => {
+                console.log(element);
                 const key = element.getAttribute("data-i18n");
                 if (translations[key]) {
                     element.textContent = translations[key];
                 }
             });
         });
-
-    
 }
