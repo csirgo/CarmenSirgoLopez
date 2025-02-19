@@ -5,5 +5,8 @@
     "experience": "Experience",
     "skills": "Skills",
     "greeting": "Hello! I'm Carmen Sirgo López, a Software Engineering graduate with a Master's degree in Web Engineering. This is my portfolio where you can find information about me and my projects.",
-    "software_engineering": "Computer Software Engineering <em>2017-2022</em>"
+    "software_engineering": "Computer Software Engineering <em>2017-2022</em>",
+    "software_engineering_description": "I started my Bachelor's Degree in Software Engineering at the University of Oviedo in 2017 and completed it in February 2022 with a GPA of 8.52.",
+    "web_engineering": "Web Engineering Master Degree <em>2022-2024</em>",
+    "web_engineering_description": "After finishing my degree, I began my Master's in Web Engineering in 2022, also at the University of Oviedo, and completed it in July 2024 with a GPA of 9.13."
 }

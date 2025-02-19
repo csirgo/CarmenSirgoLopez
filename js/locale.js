@@ -29,10 +29,9 @@ function loadLanguage(lang) {
         .then(response => response.json())
         .then(translations => {
             document.querySelectorAll("[data-i18n]").forEach(element => {
-                console.log(element);
                 const key = element.getAttribute("data-i18n");
                 if (translations[key]) {
-                    element.textContent = translations[key];
+                    element.innerHTML = translations[key];
                 }
             });
         });
