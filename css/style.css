@@ -267,7 +267,8 @@ section:nth-child(n + 2) article {
   display: grid;
   grid-template-areas:
     "t i"
-    "p i";
+    "p i"
+    "l i";
   grid-auto-rows: min-height auto;
   grid-template-columns: 1fr 200px;
 }
@@ -280,7 +281,7 @@ h3 {
 article p {
   align-self: start;
   height: 100%;
-  padding: 0px 30px 30px 30px;
+  padding: 0px 15px 30px 30px;
   grid-area: p;
 }
 
@@ -288,6 +289,27 @@ article img {
   grid-area: i;
   max-height: 200px;
   max-width: 200px;
+}
+
+#portfolio article p {
+  padding-bottom: 10px;
+}
+
+.social-links {
+  grid-area: l;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 30px 10px 30px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: var(--link-color, #000);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 article a {
@@ -337,12 +359,30 @@ footer {
 
 @media (max-width: 1500px) {
   section:first-of-type article {
-    max-width: 40%;
+    max-width: 45%;
   }
 
   section:not(:first-child) article,
-  nav,
   h2 {
+    min-width: 65%;
+  }
+
+  nav {
+    min-width: 55%;
+  }
+}
+
+@media (max-width: 1300px) {
+  section:first-of-type article {
+    max-width: 50%;
+  }
+
+  section:not(:first-child) article,
+  h2 {
+    min-width: 70%;
+  }
+
+  nav {
     min-width: 60%;
   }
 }
@@ -357,13 +397,28 @@ footer {
   }
 
   section:not(:last-child) article,
-  nav,
   section:not(:last-child) h2 {
-    min-width: 75%;
+    min-width: 80%;
+  }
+
+  nav {
+    min-width: 70%;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  section:not(:last-child) article,
+  h2 {
+    min-width: 95%;
+  }
+
+  nav {
+    min-width: 85%;
+  }
+}
+
+@media (max-width: 750px) {
+
   section:not(:last-child) article,
   h2 {
     min-width: 95%;
@@ -373,13 +428,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
+  
   section:not(:last-child) article > img {
-    display: none;
+    padding: 10px;
   }
-}
 
-@media (max-width: 600px) {
   section {
     display: flex;
     flex-direction: column;
@@ -454,5 +507,15 @@ footer {
   #menu-cb:checked ~ label > span:nth-child(3) {
     transform: rotate(135deg);
     bottom: 13px;
+  }
+
+  h3 {
+    padding-top: 20px;
+
+    text-align: center;
+  }
+
+  article>p {
+    padding-bottom: 20px;
   }
 }
