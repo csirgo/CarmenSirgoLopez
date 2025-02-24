@@ -8,5 +8,13 @@
     "software_engineering": "Computer Software Engineering <em>2017-2022</em>",
     "software_engineering_description": "I started my Bachelor's Degree in Software Engineering at the University of Oviedo in 2017 and completed it in February 2022 with a GPA of 8.52.",
     "web_engineering": "Web Engineering Master Degree <em>2022-2024</em>",
-    "web_engineering_description": "After finishing my degree, I began my Master's in Web Engineering in 2022, also at the University of Oviedo, and completed it in July 2024 with a GPA of 9.13."
+    "web_engineering_description": "After finishing my degree, I began my Master's in Web Engineering in 2022, also at the University of Oviedo, and completed it in July 2024 with a GPA of 9.13.",
+    "cubical_ranch_description": "I developed a farm management video game as my Bachelor's Thesis. It was built using Unreal Engine 4, both with Blueprints and C++, and includes self-made assets.",
+    "arkame_games_description": "This project is a multiplayer minigame platform for two players. Developed using JavaScript and WebSockets, along with HTML5 and CSS, it also features self-made graphical assets.",
+    "menta_description": "In 2021, I completed my internship at Grupo Mentaformación Siglo XXI, where I developed a website using WordPress. It was a full-stack project, where I worked on both the front-end and back-end, created plugins in PHP, and managed the database.",
+    "hiberus_description": "In 2024, I began my Master's internship at Hiberus, where I primarily worked with Java on a newspaper's website. I am currently in the microservices department, working with Java, Spring Boot, Jenkins, and OpenShift.",
+    "programing_languages": "Programming Languages",
+    "other": "Other",
+    "languages": "Languages",
+    "footer": "© 2025 Carmen Sirgo López. All rights reserved"
 }
