@@ -15,7 +15,7 @@
 }
 
 #hobbies article {
-    grid-template-columns: 275px 275;
+    grid-template-columns: 275px 275px;
     width: calc(550 + 55px);
 }
 
@@ -60,7 +60,7 @@
     float: none;
     grid-area: auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 275px;
     max-height: calc(99% -  1.2em);
 }
 
@@ -206,8 +206,8 @@
     #hobbies article {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
         justify-content: center; /* Centra el contenido si es necesario */
-        min-width: calc(300px + 40px);
-        width: calc(300px + 40px);
+        min-width: calc(275px + 40px);
+        width: calc(275px + 40px);
     }
 
     #hobbies article h3 {
