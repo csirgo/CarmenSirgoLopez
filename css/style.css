@@ -416,7 +416,7 @@ footer {
 
 @media (max-width: 750px) {
 
-  section:not(:last-child) article,
+  section:nth-child(n + 2):nth-last-child(n + 3) article,
   h2 {
     min-width: 95%;
 
