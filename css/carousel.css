@@ -1,25 +1,37 @@
-section:last-of-type h3 {
-    padding: 20px;
-}
-
-section:last-of-type article {
+#skills article, #hobbies article  {
+    background-color: var(--card-color);
+    border-radius: 15px;
     max-height: 100%;
     overflow: revert;
     padding: 0px 20px 20px 20px;
 
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 15px;
+}
+
+#skills article {
+    grid-template-columns: 100px 100px 100px 100px;
     width: calc(400px + 85px);
 }
 
-section:last-of-type article h3 {
+#hobbies article {
+    grid-template-columns: 275px 275;
+    width: calc(550 + 55px);
+}
+
+#skills article h3 {
     text-align: center;
     grid-area: auto;
     grid-column-start: span 4;
 }
 
-section:last-of-type article p {
+#hobbies article h3 {
+    text-align: center;
+    grid-area: auto;
+    grid-column-start: span 2;
+}
+
+#skills article p {
     font-size: 1.1em;
     float: none;
     grid-area: auto;
@@ -28,24 +40,41 @@ section:last-of-type article p {
     padding: 0%;
 }
 
-section:last-of-type article img {
+#hobbies article p {
+    font-size: 1.1em;
+    float: none;
+    grid-area: auto;
+    width: 275px;
+    text-align: center;
+    padding: 0%;
+}
+
+#skills article img {
     filter: brightness(var(--brightness));
     float: none;
     grid-area: auto;
     height: calc(99% -  1.2em);
 }
 
-section:last-of-type pre {
+#hobbies article img {
+    float: none;
+    grid-area: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: calc(99% -  1.2em);
+}
+
+#skills pre {
     font-size: 1.2em;
 }
 
-section:last-of-type pre img {
+#skills pre img {
     filter: brightness(var(--brightness));
     width: 50px;
     margin-top: 15px;
 }
 
-section:last-of-type>p:last-of-type {
+#skills>p:last-of-type {
     padding-bottom: 20px;
 }
 
@@ -100,6 +129,10 @@ section:last-of-type>p:last-of-type {
 }
 
 .dots {
+    margin-bottom: 20px;
+}
+
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -113,7 +146,7 @@ section:last-of-type>p:last-of-type {
 }
 
 .enable,
-.dots:hover {
+.dot:hover {
     opacity: 1;
 }
 
@@ -128,9 +161,14 @@ section:last-of-type>p:last-of-type {
 }
 
 @media (max-width: 1500px) {
-    section:last-of-type article {
+    #skills article {
         grid-template-columns: 100px 100px 100px 100px;
         min-width: calc(400px + 85px);
+    }
+
+    #hobbies article {
+        grid-template-columns: 275px 275px;
+        min-width: calc(550px + 55px);
     }
 
     .forward {
@@ -145,24 +183,36 @@ section:last-of-type>p:last-of-type {
 @media (max-width: 1100px) {
 
     .forward {
-        right: 7%;
+        right: 5%;
     }
     
     .back {
-        left: 7%;
+        left: 5%;
     }
 }
 
 @media (max-width: 700px) {
-    section:last-of-type article {
+    #skills article {
         grid-template-columns: 100px 100px 100px;
         min-width: calc(300px + 70px);
         width: calc(300px + 70px);
     }
 
-    section:last-of-type article h3 {
+    #skills article h3 {
         grid-column-start: span 3;
     
+    }
+
+    #hobbies article {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        justify-content: center; /* Centra el contenido si es necesario */
+        min-width: calc(300px + 40px);
+        width: calc(300px + 40px);
+    }
+
+    #hobbies article h3 {
+        grid-column-start: auto; /* Evita que el título ocupe más de una columna */
+        grid-column: span 1;
     }
 
     .forward {
@@ -175,13 +225,13 @@ section:last-of-type>p:last-of-type {
 }
 
 @media (max-width: 500px) {
-    section:last-of-type article {
+    #skills article {
         grid-template-columns: 100px 100px;
         min-width: calc(200px + 55px);
         width: calc(200px + 55px);
     }
 
-    section:last-of-type article h3 {
+    #skills article h3 {
         grid-column-start: span 2;
     }
 }

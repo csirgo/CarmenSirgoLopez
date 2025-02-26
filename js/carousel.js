@@ -1,24 +1,26 @@
-var slidePosition = 1;
-SlideShow(slidePosition);
+var slidePosition = [1,1];
+slideShow(0, slidePosition);
+slideShow(1, slidePosition);
 
-function plusSlides(n) {
-  SlideShow(slidePosition += n);
+function plusSlides(carousel, n) {
+  slideShow(carousel, slidePosition[carousel] += n);
 }
 
-function currentSlide(n) {
-  SlideShow(slidePosition = n);
+function currentSlide(carousel, n) {
+  slideShow(carousel, slidePosition[carousel] = n);
 }
 
-function SlideShow(n) {
+function slideShow(carousel, n) {
   var i;
-  var slides = document.getElementsByClassName("containers");
-  var circles = document.getElementsByClassName("dots");
-  if (n > slides.length) {slidePosition = 1}
-  if (n < 1) {slidePosition = slides.length}
+  var carousels = document.getElementsByClassName("carousel");
+  var slides = carousels[carousel].getElementsByClassName("containers");
+  var dots = carousels[carousel].getElementsByClassName("dot");
+  if (n > slides.length) {slidePosition[carousel] = 1}
+  if (n < 1) {slidePosition[carousel] = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      circles[i].className = circles[i].className.replace(" enable", "");
+    slides[i].style.display = "none";
+    dots[i].className = dots[i].className.replace(" enable", "");
   }
-  slides[slidePosition-1].style.display = "grid";
-  circles[slidePosition-1].className += " enable";
+  slides[slidePosition[carousel]-1].style.display = "grid";
+  dots[slidePosition[carousel]-1].className += " enable";
 } 

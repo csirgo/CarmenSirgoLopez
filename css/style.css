@@ -147,10 +147,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-h3 {
-  font-size: 1.3em;
-}
-
 main {
   padding: 0;
   margin: 0%;
@@ -255,7 +251,7 @@ a > img {
 
 /* Resto de secciones */
 
-section:nth-child(n + 2) article {
+section:nth-child(n + 2):nth-last-child(n + 3) article {
   background-color: var(--card-color);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -274,6 +270,7 @@ section:nth-child(n + 2) article {
 }
 
 h3 {
+  font-size: 1.3em;
   padding: 30px 30px 0px 30px;
   grid-area: t;
 }
@@ -328,7 +325,7 @@ a:hover {
   color: var(--font-highlight-color);
 }
 
-section:last-of-type h2 {
+#skills h2, #hobbies h2 {
   text-align: center;
 }
 
@@ -343,7 +340,7 @@ pre img {
 
 footer {
   scroll-snap-align: end;
-  background-color: var(--background-color2);
+  background-color: var(--background-color1);
   border-top: 4px solid var(--font-highlight-color);
   text-align: center;
   padding: 20px;

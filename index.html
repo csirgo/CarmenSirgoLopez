@@ -136,7 +136,7 @@
             </article>
         </section>
 
-        <section id="destrezas">
+        <section id="skills">
             <h2 data-i18n="skills">Destrezas</h2>
             <div class="carousel fade">
                 <article class="containers">
@@ -179,18 +179,41 @@
                     <p><img alt="Japonés" data-src="resources/japon.png">Básico</p>
                 </article>
 
-                <a class="back" onclick="plusSlides(-1)">&lt;</a>
-                <a class="forward" onclick="plusSlides(1)">></a>
-            </div>
-            <div style="text-align:center">
-                <span class="dots"></span>
-                <span class="dots"></span>
-                <span class="dots"></span>
-                <span class="dots"></span>
+                <a class="back" onclick="plusSlides(0,-1)">&lt;</a>
+                <a class="forward" onclick="plusSlides(0,1)">></a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(0,1)"></span>
+                    <span class="dot" onclick="currentSlide(0,2)"></span>
+                    <span class="dot" onclick="currentSlide(0,3)"></span>
+                    <span class="dot" onclick="currentSlide(0,4)"></span>
+                </div>
             </div>
             <pre><img alt="Experiencia" src="resources/experiencia.png"></pre>
-            <p>
-     Experiencia</p>
+            <p data-i18n="experience">Experiencia</p>
+        </section>
+        <section id="hobbies">
+            <h2 data-i18n="hobbies">Otros Hobbies</h2>
+            <div class="carousel fade">
+                <article class="containers">
+                    <h3>Logos</h3>
+                    <p><img alt="The Rock is a Lie Logo" class="lazy" data-src="resources/trial-logo.jpeg">TRIAL</p>
+                    <p><img alt="The Rock is a Lie Logo Winter" class="lazy" data-src="resources/trial-logo-winter.jpg">TRIAL Winter</p>
+                </article>
+                <article class="containers">
+                    <h3 >Pixel art</h3>
+                    <p><img alt="" class="lazy" data-src="resources/aquants.jpeg">Aqua Ants</p>
+                    <p><img alt="" class="lazy" data-src="resources/coffee-ants.jpeg">Coffee Ants</p>
+                    <p><img alt="" class="lazy" data-src="resources/forest-guardiants.jpeg">Forest Guardiants</p>
+                    <p><img alt="" class="lazy" data-src="resources/popcorn-ants.jpeg">Popcorn Ants</p>
+                    <p><img alt="" class="lazy" data-src="resources/star-guardiants.jpeg">Star Guardiants</p>
+                </article>
+                <a class="back" onclick="plusSlides(1,-1)">&lt;</a>
+                <a class="forward" onclick="plusSlides(1,1)">></a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1,1)"></span>
+                    <span class="dot" onclick="currentSlide(1,2)"></span>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
