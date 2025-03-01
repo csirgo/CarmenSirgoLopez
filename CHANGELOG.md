@@ -1,8 +1,9 @@
 # Changelog
 
 
-## [Unreleased]
-- 
+## [Future functionalities/fixes]
+- Click to see full size gallery images
+- Spining profile picture
 
 ## [1.0.2] - 2025-03-01
 ### Added
