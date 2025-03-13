@@ -3,6 +3,9 @@
 
 ## [Future functionalities/fixes]
 - Click to see full size gallery images
+
+## [1.0.3] - 2025-03-13
+### Added
 - Spining profile picture
 
 ## [1.0.2] - 2025-03-01
