@@ -195,25 +195,6 @@ section article p {
   font-size: 1.2em;
 }
 
-section > img {
-  margin-right: 2%;
-  min-width: 250px;
-  width: 18%;
-  clip-path: polygon(
-    50% 0%,
-    23% 8%,
-    5% 29%,
-    1% 57%,
-    12% 83%,
-    36% 98%,
-    64% 98%,
-    88% 84%,
-    99% 57%,
-    95% 29%,
-    77% 8%
-  );
-}
-
 article ul {
   margin-top: 10px;
   width: 100%;
@@ -389,7 +370,7 @@ footer {
     flex-direction: column;
   }
 
-  section > img {
+  .flip-box {
     margin-top: 70px;
   }
 

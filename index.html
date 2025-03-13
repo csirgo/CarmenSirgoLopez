@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css" media="all" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/flipbox.css">
 </head>
 
 <body>
@@ -46,7 +47,16 @@
     </header>
     <main>
         <section id="home">
-            <img alt="Dibujo Carmen Sirgo Lopez" src="resources/Carmen.png">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img alt="Dibujo Carmen Sirgo Lopez" src="resources/Carmen.png">
+                  </div>
+                  <div class="flip-box-back">
+                    <img alt="Foto Carmen Sirgo Lopez" src="resources/yo.png">
+                  </div>
+                </div>
+            </div>
             <article>
                 <h1>Carmen <em>Sirgo López</em></h1>
                 <p id="quiensoy-text" data-i18n="greeting">
