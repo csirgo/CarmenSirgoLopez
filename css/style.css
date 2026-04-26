@@ -250,6 +250,10 @@ section:nth-child(n + 2):nth-last-child(n + 3) article {
   grid-template-columns: 1fr 200px;
 }
 
+section:nth-child(n + 2):nth-last-child(n + 3) article:last-child {
+  margin-bottom: 20px;
+}
+
 h3 {
   font-size: 1.3em;
   padding: 30px 30px 0px 30px;
@@ -258,8 +262,7 @@ h3 {
 
 article p {
   align-self: start;
-  height: 100%;
-  padding: 0px 15px 30px 30px;
+  padding: 5px 15px 15px 30px;
   grid-area: p;
 }
 
@@ -277,7 +280,7 @@ article img {
   grid-area: l;
   width: 100%;
   gap: 10px;
-  padding: 10px 30px 10px 30px;
+  padding: 5px 30px 10px 30px;
 
   display: flex;
   justify-content: flex-start;
