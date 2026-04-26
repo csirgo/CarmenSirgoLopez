@@ -13,7 +13,7 @@
     "arkame_games_description": "This project is a multiplayer minigame platform for two players. Developed using JavaScript and WebSockets, along with HTML5 and CSS, it also features self-made graphical assets.",
     "menta_description": "In 2021, I completed my internship at Grupo Mentaformación Siglo XXI, where I developed a website using WordPress. It was a full-stack project, where I worked on both the front-end and back-end, created plugins in PHP, and managed the database.",
     "hiberus_title": "Hiberus <em>2024-Now</em>",
-    "aprism_lines_description": "An IntelliJ plugin that allows highlighting lines in multiple colors and keeps them saved between sessions. Its goal is to make code analysis and debugging easier.",
+    "prism_lines_description": "An IntelliJ plugin that allows highlighting lines in multiple colors and keeps them saved between sessions. Its goal is to make code analysis and debugging easier.",
     "hiberus_description": "In 2024, I began my Master's internship at Hiberus, where I primarily worked with Java on a newspaper's website. I am currently in the microservices department, working with Java, Spring Boot, Jenkins, and OpenShift.",
     "programing_languages": "Programming Languages",
     "other": "Other",
