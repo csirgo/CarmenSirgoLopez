@@ -338,6 +338,26 @@ pre img {
   margin-bottom: 0;
 }
 
+.winner {
+  position: relative;
+  display: inline-block;
+}
+
+.winner img {
+    display: block;
+}
+
+.trophy {
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    font-size: 25px;
+}
+
+.fa-trophy {
+  filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+}
+
 footer {
   scroll-snap-align: end;
   background-color: var(--background-color1);

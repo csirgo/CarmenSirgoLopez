@@ -25,11 +25,12 @@
                 <span></span>
             </label>
             <ul class="nav-links">
-                <li><a href="#quiensoy" data-i18n="home">Inicio</a></li>
-                <li><a href="#estudios" data-i18n="studies">Estudios</a></li>
+                <li><a href="#home" data-i18n="home">Inicio</a></li>
+                <li><a href="#studies" data-i18n="studies">Estudios</a></li>
                 <li><a href="#portfolio" data-i18n="portfolio">Portfolio</a></li>
-                <li><a href="#experiencia" data-i18n="experience">Experiencia</a></li>
-                <li><a href="#destrezas" data-i18n="skills">Destrezas</a></li>
+                <li><a href="#experience" data-i18n="experience">Experiencia</a></li>
+                <li><a href="#skills" data-i18n="skills">Destrezas</a></li>
+                <li><a href="#hobbies" data-i18n="other">Otros</a></li>
             </ul>
         </nav>
         <div class="config">
@@ -44,7 +45,7 @@
         </div>
     </header>
     <main>
-        <section id="quiensoy">
+        <section id="home">
             <img alt="Dibujo Carmen Sirgo Lopez" src="resources/Carmen.png">
             <article>
                 <h1>Carmen <em>Sirgo López</em></h1>
@@ -64,24 +65,39 @@
             </article>
         </section>
 
-        <section id="estudios">
+        <section id="studies">
             <h2 data-i18n="studies">Estudios</h2>
-            <article>
-                <h3 data-i18n="software_engineering">Ingeniería Informática de Software <em>2017-2022</em></h3>
-                <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/eii.png">
-                <p data-i18n="software_engineering_description">Comencé el grado de Ingeniería Informática de Software en la Universidad de
-                    Oviedo en 2017 y finalicé en Febrero de 2022 con una nota media de 8,52.</p>
-            </article>
             <article>
                 <h3 data-i18n="web_engineering">Master en Ingeniería Web <em>2022-2024</em></h3>
                 <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/miw.jpg">
                 <p data-i18n="web_engineering_description">Tras finalizar el grado, comencé el Máster en Ingeniería Web en 2022, también en la Universidad de Oviedo,
                     y finalicé en Julio de 2024 con una nota media de 9,13.</p>
             </article>
+            <article>
+                <h3 data-i18n="software_engineering">Ingeniería Informática de Software <em>2017-2022</em></h3>
+                <img alt="Ingeniería Informática de Software" class="lazy" data-src="resources/eii.png">
+                <p data-i18n="software_engineering_description">Comencé el grado de Ingeniería Informática de Software en la Universidad de
+                    Oviedo en 2017 y finalicé en Febrero de 2022 con una nota media de 8,52.</p>
+            </article>
         </section>
 
         <section id="portfolio">
             <h2 data-i18n="portfolio">Portfolio</h2>
+            <article>
+                <h3>Arkame Games</h3>
+                <img alt="Arkame Games Logo" class="lazy" data-src="resources/AGIcon.png">
+                <p  data-i18n="arkame_games_description"> Es una plataforma de minijuegos multijugador para dos jugadores.
+                    Ha sido desarrollado JavaScript y Websockets, además de HTML5 y CSS. Los recursos gráficos también son
+                    de creación propia.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/watch?v=WcyclWXMypM&t=119s" title="Ver en YouTube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/csirgo/TFM_MinigamePlatform" title="Ver en GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </article>
             <article>
                 <h3>Cubical Ranch</h3>
                 <img alt="Cubical Ranch Logo" class="lazy" data-src="resources/CBIcon.png">
@@ -100,39 +116,24 @@
                     </a>
                 </div>
             </article>
-            <article>
-                <h3>Arkame Games</h3>
-                <img alt="Arkame Games Logo" class="lazy" data-src="resources/AGIcon.png">
-                <p  data-i18n="arkame_games_description"> Es una plataforma de minijuegos multijugador para dos jugadores.
-                    Ha sido desarrollado JavaScript y Websockets, además de HTML5 y CSS. Los recursos gráficos también son
-                    de creación propia.</p>
-                <div class="social-links">
-                    <a href="https://www.youtube.com/watch?v=WcyclWXMypM&t=119s" title="Ver en YouTube" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://github.com/csirgo/TFM_MinigamePlatform" title="Ver en GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </article>
         </section>
 
-        <section id="experiencia">
+        <section id="experience">
             <h2 data-i18n="experience">Experiencia</h2>
+            <article>
+                <h3 data-i18n="hiberus_title">Hiberus <em>2024-Actualidad</em></h3>
+                <img alt="Logo Hiberus" class="lazy" data-src="resources/hiberus.jpg">
+                <p  data-i18n="hiberus_description">En 2024 comencé mis práctica del máster en Hiberus, donde estuve trabajando principalmente con Java manteniendo 
+                    la web de un periódico.
+                    Ahora me encuentro en el departamento de microservicios, donde trabajo con Java, Spring Boot, Jenkins y
+                    OpenShift.</p>
+            </article>
             <article>
                 <h3>Grupo Mentaformación Siglo XXI <em>2021</em></h3>
                 <img alt="Logo Grupo Menta" class="lazy" data-src="resources/menta.png">
                 <p  data-i18n="menta_description">En 2021 hice mis práctica de empresa en el Grupo Mentaformación Siglo XXI, donde desarollé una página
                     web con Wordpress. Fue un proyecto full stack, donde hice tanto parte del front como del
                     back, creé plugins en PHP y gestioné la base de datos.</p>
-            </article>
-            <article>
-                <h3>Hiberus <em>2024-2025</em></h3>
-                <img alt="Logo Hiberus" class="lazy" data-src="resources/hiberus.jpg">
-                <p  data-i18n="hiberus_description">En 2024 comencé mis práctica del máster en Hiberus, donde estuve trabajando principalmente con Java para 
-                    la web de un periódico.
-                    Ahora me encuentro en el departamento de microservicios, donde trabajo con Java, Spring Boot, Jenkins y
-                    OpenShift.</p>
             </article>
         </section>
 
@@ -155,7 +156,7 @@
 
                 <article class="containers">
                     <h3>Frameworks</h3>
-                    <p><img alt="" class="lazy" data-src="resources/spring.png">Spring</p>
+                    <p><img alt="" class="lazy" data-src="resources/spring.png">Spring Boot</p>
                     <p><img alt="" class="lazy" data-src="resources/tailwind.png">Tailwind</p>
                     <p><img alt="" class="lazy" data-src="resources/react.png">React</p>
                     <p><img alt="" class="lazy" data-src="resources/cakephp.png">CakePHP</p>
@@ -176,7 +177,7 @@
                     <h3  data-i18n="languages">Idiomas</h3>
                     <p><img alt="Español" class="lazy" data-src="resources/espana.png">Nativo</p>
                     <p><img alt="Inglés" data-src="resources/reino-unido.png">B2-First</p>
-                    <p><img alt="Japonés" data-src="resources/japon.png">Básico</p>
+                    <p><img alt="Japonés" data-src="resources/japon.png">Road to N5</p>
                 </article>
 
                 <a class="back" onclick="plusSlides(0,-1)">&lt;</a>
@@ -201,9 +202,19 @@
                 </article>
                 <article class="containers">
                     <h3 >Pixel art</h3>
+                    <p class="winner">
+                        <span class="trophy"><i class="fa-solid fa-trophy"></i></span>
+                        <img alt="" class="lazy" data-src="resources/hermit-crabs.png">
+                        Hermit Crants
+                    </p>
+                    <p><img alt="" class="lazy" data-src="resources/soapy-ants.png">Soapy Ants</p>
+                    <p><img alt="" class="lazy" data-src="resources/magic-feathers.png">Magic Feathers</p>
                     <p><img alt="" class="lazy" data-src="resources/aquants.jpeg">Aqua Ants</p>
-                    <p><img alt="" class="lazy" data-src="resources/coffee-ants.jpeg">Coffee Ants</p>
+                </article>
+                <article class="containers">
+                    <h3 >Pixel art</h3>
                     <p><img alt="" class="lazy" data-src="resources/forest-guardiants.jpeg">Forest Guardiants</p>
+                    <p><img alt="" class="lazy" data-src="resources/coffee-ants.jpeg">Coffee Ants</p>
                     <p><img alt="" class="lazy" data-src="resources/popcorn-ants.jpeg">Popcorn Ants</p>
                     <p><img alt="" class="lazy" data-src="resources/star-guardiants.jpeg">Star Guardiants</p>
                 </article>
@@ -212,6 +223,7 @@
                 <div class="dots">
                     <span class="dot" onclick="currentSlide(1,1)"></span>
                     <span class="dot" onclick="currentSlide(1,2)"></span>
+                    <span class="dot" onclick="currentSlide(1,3)"></span>
                 </div>
             </div>
         </section>
